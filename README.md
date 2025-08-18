@@ -29,8 +29,6 @@ But I also wondered if it would be worth it to exit out of the function early if
 
 ![](consolelog.png)
 
-Other optimizations I considered but abandoned included slicing the alphabetized array of names to include only the items up to the name of the person whose wait time is being calculated but of course what if there are two people with the same name? Without some other kind of identifier (say, an email or a docket number), there's no way to accurately assess which of the two same-named people is being sliced out.
-
 The script is logging both the output of both versions under 3 scenarios in the console, and logging the performance test results underneath. Refreshing the page in the browser will refresh the results as well. I opted to test in the browser rather than in Node, because when I'm working as a front-end developer, I usually expect my code to be executed in a browser.
 
 

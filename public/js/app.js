@@ -26,13 +26,11 @@ class App {
 		this.testPerformance(this.court.bind(this, "Jules", 10, "Adam Betty Frank Mike"), 'court A');
 		this.testPerformance(this.court.bind(this, "Jules", 3, "Adam Betty Frank Mike"), 'court B');
 		this.testPerformance(this.court.bind(this, "Zane", 1, "Mark Hank Ana Vivian"), 'court C');
-		this.testPerformance(this.court.bind(this, "Zane", 10, "Mark Hank Ana Vivian Joe James Tina Mahira Colum Brennan Sienna Alex George John Steve Nick Mike Ben Luke Anakin Ob-Wan"), 'court D');
 		
 		// test the second version of the count function
 		this.testPerformance(this.court2.bind(this, "Jules", 10, "Adam Betty Frank Mike"), 'court2 A');
 		this.testPerformance(this.court2.bind(this, "Jules", 3, "Adam Betty Frank Mike"), 'court2 B');
 		this.testPerformance(this.court2.bind(this, "Zane", 1, "Mark Hank Ana Vivian"), 'court2 C');
-		this.testPerformance(this.court2.bind(this, "Zane", 10, "Mark Hank Ana Vivian Joe James Tina Mahira Colum Brennan Sienna Alex George John Steve Nick Mike Ben Luke Anakin Ob-Wan"), 'court2 D');
 	}
 	
 	/**
