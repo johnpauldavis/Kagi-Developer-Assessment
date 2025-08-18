@@ -15,11 +15,11 @@ Having cloned or downloaded the repo, run `nvm use` then `npm install`.
 Once the packages are installed, you can run `npm run start` to start Express.
 
 
-## HTML/CSS Challenge
+## Task 1 - HTML Recipes
 
 This will appear at [http://localhost:3000](http://localhost:3000) when the Express server is intitialized.
 
-## Javascript Performance Challenge
+## Task 2 - JavaScript optimization
 
 The Javascript challenge is being executed in the same file served [http://localhost:3000](http://localhost:3000) when the Express server is intitialized. 
 
