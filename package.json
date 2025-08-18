@@ -1,0 +1,14 @@
+{
+  "name": "kagi-developer-assesment",
+  "version": "1.0.0",
+  "description": "Kagi Developer Assessment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "John Paul Davis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
