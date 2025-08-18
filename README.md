@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is John Paul Davis's submission for the Kagi Developer Assesment. It delivers both parts of the assesment with an [Express](https://expressjs.com) server set up so it can be run locally.
+This is John Paul Davis's submission for the [Kagi Developer Assesment](https://gist.github.com/jacobwinters/6d0cabf12f12c0372639aecf00867482). It delivers both parts of the assesment with an [Express](https://expressjs.com) server set up so it can be run locally.
 
 ## Dependencies
 
