@@ -4,6 +4,8 @@
 
 This is John Paul Davis's submission for the [Kagi Developer Assesment](https://gist.github.com/jacobwinters/6d0cabf12f12c0372639aecf00867482). It delivers both parts of the assesment with an [Express](https://expressjs.com) server set up so it can be run locally.
 
+You can view a deployed version of this on Netlify [here](https://kagidevassesment.netlify.app).
+
 ## Dependencies
 
 This requires that [Node.js](https://nodejs.org/en) be installed and able to run on your computer.
