@@ -18,15 +18,6 @@ class App {
 		console.log('court2', this.court2("Zane", 1, "Mark Hank Ana Vivian"));
 		// expect 150
 		
-		console.log('court3', this.court2("Jules", 3, "Adam Betty Frank Mike"));
-		// expect 60
-		
-		console.log('court3', this.court("Zane", 10, "Mark Hank Ana Vivian"));
-		// expect 30
-		
-		console.log('court3', this.court2("Zane", 1, "Mark Hank Ana Vivian"));
-		// expect 150
-		
 		// test the first version of this count function
 		this.testPerformance(this.court.bind(this, "Jules", 10, "Adam Betty Frank Mike"), 'court A');
 		this.testPerformance(this.court.bind(this, "Jules", 3, "Adam Betty Frank Mike"), 'court B');
@@ -34,10 +25,6 @@ class App {
 		
 		// test the second version of the count function
 		this.testPerformance(this.court2.bind(this, "Jules", 10, "Adam Betty Frank Mike"), 'court2 A');
-		this.testPerformance(this.court2.bind(this, "Jules", 3, "Adam Betty Frank Mike"), 'court2 B');
-		this.testPerformance(this.court2.bind(this, "Zane", 1, "Mark Hank Ana Vivian"), 'court2 C');
-		
-		this.testPerformance(this.court3.bind(this, "Jules", 10, "Adam Betty Frank Mike"), 'court3 A');
 		this.testPerformance(this.court2.bind(this, "Jules", 3, "Adam Betty Frank Mike"), 'court2 B');
 		this.testPerformance(this.court2.bind(this, "Zane", 1, "Mark Hank Ana Vivian"), 'court2 C');
 	}
@@ -126,23 +113,6 @@ class App {
 	}
 	
 	/**
-	 * given an array and a value, return the index of that value
-	 *
-	 * @param {Array} array to search
-	 * @param {String} string to look for in array values
-	 * @return {Number} the index of the string in the array or -1
-	 */
-	placeinline(args) {
-		let beforeMe = 0;
-		args[0].map(person => {
-		  if (person < args[1]) {
-		  	beforeMe++
-		  }
-		})
-	  return beforeMe;
-	}
-	
-	/**
 	 * given a function, execute that function while running console.time()
 	 *
 	 * @param {Function} function to test
@@ -197,21 +167,6 @@ class App {
 	 */
 	court2(name, judges, others) {
 	  const getlength = this.chain([this.makelower, this.makearray, this.populatearray2, this.sortarray, this.getindex]);
-	  const length = getlength(name, others);
-	
-	  return Math.ceil((length + 1) / judges) * 30;
-	}
-	
-	/**
-	 * calculates how long the wait will be for a certain person's turn
-	 *
-	 * @param {String} name - name of the person waiting
-	 * @param {Number} judges - number of judges working today - must be integer
-	 * @param {String} others - names of other people waiting, space-separated
-	 * @return {Number} endtime - time in minutes til name's hearing ends
-	 */
-	court3(name, judges, others) {
-	  const getlength = this.chain([this.makelower, this.makearray, this.populatearray2, this.placeinline]);
 	  const length = getlength(name, others);
 	
 	  return Math.ceil((length + 1) / judges) * 30;
