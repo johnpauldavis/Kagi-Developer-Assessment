@@ -1,7 +1,3 @@
-/**
- * The top-level controller for the whole page. This component is responsible
- * for loading other controllers and views.
- */
 class App {
 	constructor() {
 		console.log('court', this.court("Jules", 3, "Adam Betty Frank Mike"));
