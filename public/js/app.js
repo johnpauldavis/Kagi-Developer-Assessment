@@ -166,9 +166,9 @@ class App {
 	* 3. push name into the array
 	* 4. alphabetize, using sort()
 	* 5. get the index of name in the sorted array
-	* 6. the time until the hearing is done is the length of a smaller array 
-	* containing everything up the position of name divided by the number of 
-	* judges available rounded up to the nearest integer times 30 - return this
+	* 6. the time until the hearing is done is the index of name plus 1 divided 
+	* by the number of judges available rounded up to the nearest integer times 
+	* 30 - return this
 	**/
 	
 	/**
